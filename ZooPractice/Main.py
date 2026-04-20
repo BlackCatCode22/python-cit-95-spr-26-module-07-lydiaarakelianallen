@@ -1,19 +1,27 @@
-class Animal:
-    # static class variable to keep track of the number of animals
-numOfAnimals = 0
-def __init__(self, species, name, animal_id, birth_date, color, sex, weight, originating_zoo, date_arrival):
+# Main.py
+# driver file for Zoo Keeper's Challenge
+# last updated 4/20/26 by LA
 
-        self.species = species
-        self.name = name
-        self.animal_id = animal_id
-        self.birth_date = birth_date
-        self.color = color
-        self.sex = sex
-        self.weight = weight
-        self.originating_zoo = originating_zoo
-        self.date_arrival = date_arrival
+from Animal import Animal
+from Hyena import Hyena
+from Lion import Lion
+from Tiger import Tiger
+from Bear import Bear
 
-        # Increment the static variable when a new object is created
-        # this is the only place this field's value should be changed
+from _datetime import date
 
-        Animal.numOfAnimals += 1
+#create lists of the species
+
+list_of_hyenas = []
+list_of_lions = []
+list_of_tigers = []
+list_of_bears = []
+
+# This is needed for the calcuation for birthdays.
+
+current_date=date.today()
+current_year=current_date.year
+
+def calc_birth_date(the_season, the_year):
+        year_of_birthday = int(current_year)-int(the_year)
+        the_birth_day=""
