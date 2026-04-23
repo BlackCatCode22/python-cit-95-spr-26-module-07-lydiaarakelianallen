@@ -72,7 +72,6 @@ def process_one_line(one_line):
 
         origin_01 = group_of_words[4].strip();
         origin_02 = group_of_words[5].strip();
-
         from_zoo = origin_01 + ", " + origin_02
 
         birth_day = calc_birth_date(season, age_in_years)

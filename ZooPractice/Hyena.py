@@ -28,3 +28,6 @@ class Hyena(Animal):
         Hyena.numOfHyenas += 1
 
         #call the constructor of the parent class (Animal) with 'Hyena' as the species
+        super().__init__("hyena", name, animal_id, birth_date, color, sex, weight, originating_zoo, date_arrival)
+
+    def make_sound(self):

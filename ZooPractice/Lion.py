@@ -24,7 +24,10 @@ class Lion(Animal):
                 line_num += 1
 
     def __init__(self, name="a_name", animal_id="an_id",birth_date="2099-01-01", color="_color", sex="a_sex",weight="a_weight", originating_zoo="a_zoo", date_arrival="2099-01-01"):
-        # incriment the static variable numOfHyenas when a new Hyena object is created
+        # incriment the static variable numOflions when a new lion object is created
         Lion.numOfLions += 1
 
-        #call the constructor of the parent class (Animal) with 'Hyena' as the species
+        #call the constructor of the parent class (Animal) with 'lion' as the species
+        super().__init__("lion", name, animal_id, birth_date, color, sex, weight, originating_zoo, date_arrival)
+
+    def make_sound(self):

@@ -27,4 +27,7 @@ class Bear(Animal):
         # incriment the static variable numOfHyenas when a new Hyena object is created
         Bears.numOfBears += 1
 
-        #call the constructor of the parent class (Animal) with 'Hyena' as the species
+        #call the constructor of the parent class (Animal) with 'bear' as the species
+        super().__init__("bear", name, animal_id, birth_date, color, sex, weight, originating_zoo, date_arrival)
+
+    def make_sound(self):
