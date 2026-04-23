@@ -1,4 +1,6 @@
-class Bear:
+from ZooPractice.Animal import Animal
+
+class Bear(Animal):
     # create a static class variable to keep track of the number of hyenas created
     numOfBears = 0
 
@@ -8,8 +10,8 @@ class Bear:
     #create a list of hyena names.
     list_of_bear_names = []
 
-    file_path= "C:\Users\lydia\Downloads\animalNames.txt"
-    with open(file_path,'r')
+    file_path= r"C:\Users\lydia\Downloads\animalNames.txt"
+    with open(file_path,'r') as file:
         lines = file.readlines()
 
         # Iterate through the lines in the file
