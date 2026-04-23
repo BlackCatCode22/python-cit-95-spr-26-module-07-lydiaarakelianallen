@@ -62,7 +62,7 @@ def process_one_line(one_line):
         single_words = group_of_words[0].strip().split(" ")
         age_in_years = single_words[0]
         a_sex = single_words[3]
-        a_speech = single_words[4]
+        a_species = single_words[4]
         single_words = group_of_words[1].strip().split(" ")
         season = single_words[2]
         color = single_words[2].strip();
