@@ -8,7 +8,7 @@ from Lion import Lion
 from Tiger import Tiger
 from Bear import Bear
 
-from _datetime import date
+from datetime import date
 
 #create lists of the species
 
@@ -63,12 +63,15 @@ def process_one_line(one_line):
         age_in_years = single_words[0]
         a_sex = single_words[3]
         a_species = single_words[4]
-        single_words = group_of_words[1].strip().split(" ")
-        season = single_words[2]
-        color = single_words[2].strip();
-        weight = single_words[3].strip();
-        origin_01 = single_words[4].strip();
-        origin_02 = single_words[5].strip();
+
+
+        season = group_of_words[1].strip().split(" ")[2]
+
+        color = group_of_words[2].strip();
+        weight = group_of_words[3].strip();
+
+        origin_01 = group_of_words[4].strip();
+        origin_02 = group_of_words[5].strip();
 
         from_zoo = origin_01 + ", " + origin_02
 
