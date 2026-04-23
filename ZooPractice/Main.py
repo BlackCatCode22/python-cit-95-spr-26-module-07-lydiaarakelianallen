@@ -70,7 +70,7 @@ def process_one_line(one_line):
         origin_01 = single_words[4].strip();
         origin_02 = single_words[5].strip();
 
-        from zoo = origin_01 + ", " + origin_02
+        from_zoo = origin_01 + ", " + origin_02
 
         birth_day = calc_birth_date(season, age_in_years)
 
@@ -112,3 +112,51 @@ def process_one_line(one_line):
                 my_bear.animal_id = "Be" + str(Bear.numOfBears).zfill(2)
                 # add to the bear list
                 list_of_bears.append(my_bear)
+
+file_path = r"C:\Users\lydia\Downloads\arrivingAnimals.txt"
+with open(file_path, "r") as file:
+        for line in file:
+                process_one_line(line)
+
+print(f"\n\nNumber of animals created: {Animal.numOfAnimals}")
+
+print(f"Number of Hyenas created: {Hyena.numOfHyenas}")
+
+print(f"Number of lions created: {Lion.numOfLions}")
+
+print(f"Number of tigers created: {Tiger.numOfTigers}")
+
+print(f"Number of Bears created: {Bear.numOfBears}")
+
+print()
+print("Zookeeper's Challenge Zoo Population")
+print()
+print("Hyena Habitat:")
+print()
+for hyena in list_of_hyenas:
+        print(hyena.animal_id + ", " + hyena.name + "; birthdate:" + str(hyena.birth_date)+ "; "
+              +hyena.color+"; "+hyena.sex+"; "+hyena.weight+"; "+hyena.originating_zoo+"; arrived: "+str(hyena.date_arrival))
+
+
+print()
+print("Lion Habitat:")
+print()
+for lion in list_of_lions:
+        print(lion.animal_id + ", " + lion.name + "; birthdate:" + str(lion.birth_date)+ "; "
+              +lion.color+"; "+lion.sex+"; "+lion.weight+"; "+lion.originating_zoo+"; arrived: "+str(lion.date_arrival))
+
+
+print()
+print("Tiger Habitat:")
+print()
+for tiger in list_of_tigers:
+        print(tiger.animal_id + ", " + tiger.name + "; birthdate:" + str(tiger.birth_date)+ "; "
+              +tiger.color+"; "+tiger.sex+"; "+tiger.weight+"; "+tiger.originating_zoo+"; arrived: "+str(tiger.date_arrival))
+
+
+print()
+print("Bear Habitat:")
+print()
+for bear in list_of_bears:
+        print(bear.animal_id + ", " + bear.name + "; birthdate:" + str(bear.birth_date)+ "; "
+              +bear.color+"; "+bear.sex+"; "+bear.weight+"; "+bear.originating_zoo+"; arrived: "+str(bear.date_arrival))
