@@ -104,7 +104,7 @@ def process_one_line(one_line):
                 list_of_tigers.append(my_tiger)
 
 
-        if "Bear" in a_species:
+        if "bear" in a_species:
                 # creat a bear object.
                 my_bear = Bear("aName", "anID", birth_day, color, a_sex, weight, from_zoo, current_date)
                 #fill in name and ID
