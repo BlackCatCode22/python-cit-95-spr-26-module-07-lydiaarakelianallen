@@ -166,7 +166,7 @@ with open("zooPopulation.txt", "w") as file:
 
         file.write("Zookeeper's Challenge Zoo Population\n")
 
-        file.write("\n\nHyena Habitat:\n")
+        file.write("\n\nHyena Habitat:\n\n")
 
         for hyena in list_of_hyenas:
                 file.write(hyena.animal_id + "; " + hyena.name + "; birthdate:" + str(hyena.birth_date)+ "; "
@@ -174,7 +174,7 @@ with open("zooPopulation.txt", "w") as file:
 
 
 
-        file.write("\n\nLion Habitat:\n")
+        file.write("\n\nLion Habitat:\n\n")
 
         for lion in list_of_lions:
                 file.write(lion.animal_id + "; " + lion.name + "; birthdate:" + str(lion.birth_date)+ "; "
@@ -182,7 +182,7 @@ with open("zooPopulation.txt", "w") as file:
 
 
 
-        file.write("\n\nTiger Habitat:\n")
+        file.write("\n\nTiger Habitat:\n\n")
 
         for tiger in list_of_tigers:
                 file.write(tiger.animal_id + "; " + tiger.name + "; birthdate:" + str(tiger.birth_date)+ "; "
