@@ -80,7 +80,7 @@ def process_one_line(one_line):
                 # creat a hyena object.
                 my_hyena = Hyena("aName", "anID", birth_day, color, a_sex, weight, from_zoo, current_date)
                 #fill in name and ID
-                my_hyena.name = Hyena.get_hyena_name(my_hyena)
+                my_hyena.name = Hyena.list_of_hyena_names.pop(2)
                 my_hyena.animal_id = "Hy" + str(Hyena.numOfHyenas).zfill(2)
                 # add to the hyena list
                 list_of_hyenas.append(my_hyena)
@@ -90,7 +90,7 @@ def process_one_line(one_line):
                 # creat a lion object.
                 my_lion = Lion("aName", "anID", birth_day, color, a_sex, weight, from_zoo, current_date)
                 #fill in name and ID
-                my_lion.name = Lion.get_lion_name(my_lion)
+                my_lion.name = Lion.list_of_lion_names.pop(2)
                 my_lion.animal_id = "Li" + str(Lion.numOfLions).zfill(2)
                 # add to the lion list
                 list_of_lions.append(my_lion)
@@ -100,7 +100,7 @@ def process_one_line(one_line):
                 # creat a tiger object.
                 my_tiger = Tiger("aName", "anID", birth_day, color, a_sex, weight, from_zoo, current_date)
                 #fill in name and ID
-                my_tiger.name = Tiger.get_tiger_name(my_tiger)
+                my_tiger.name = Tiger.list_of_tiger_names.pop(2)
                 my_tiger.animal_id = "Ti" + str(Tiger.numOfTigers).zfill(2)
                 # add to the Tiger list
                 list_of_tigers.append(my_tiger)
@@ -110,7 +110,7 @@ def process_one_line(one_line):
                 # creat a bear object.
                 my_bear = Bear("aName", "anID", birth_day, color, a_sex, weight, from_zoo, current_date)
                 #fill in name and ID
-                my_bear.name = Bear.get_bear_name(my_bear)
+                my_bear.name = Bear.list_of_bear_names.pop(2)
                 my_bear.animal_id = "Be" + str(Bear.numOfBears).zfill(2)
                 # add to the bear list
                 list_of_bears.append(my_bear)

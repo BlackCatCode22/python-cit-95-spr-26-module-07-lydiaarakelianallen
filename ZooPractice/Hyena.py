@@ -1,11 +1,8 @@
-from ZooPractice.Animal import Animal
+from Animal import Animal
 
 class Hyena(Animal):
     # create a static class variable to keep track of the number of hyenas created
     numOfHyenas = 0
-
-    # create the hyena sound
-    hyena_sound= "laugh... laugh"
 
     #create a list of hyena names.
     list_of_hyena_names = []
@@ -29,6 +26,3 @@ class Hyena(Animal):
 
         #call the constructor of the parent class (Animal) with 'Hyena' as the species
         super().__init__("hyena", name, animal_id, birth_date, color, sex, weight, originating_zoo, date_arrival)
-
-    def make_sound(self):
-        return self.hyena_sound
