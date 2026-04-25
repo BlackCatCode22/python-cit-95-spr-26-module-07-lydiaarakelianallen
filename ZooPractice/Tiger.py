@@ -4,9 +4,6 @@ class Tiger(Animal):
     # create a static class variable to keep track of the number of hyenas created
     numOfTigers = 0
 
-    # create the hyena sound
-   #   ????????????????????? lion_sound= "laugh... laugh"
-
     #create a list of hyena names.
     list_of_tiger_names = []
 
