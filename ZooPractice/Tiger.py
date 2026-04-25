@@ -31,3 +31,4 @@ class Tiger(Animal):
         super().__init__("tiger", name, animal_id, birth_date, color, sex, weight, originating_zoo, date_arrival)
 
     def make_sound(self):
+        return self.tiger_sound

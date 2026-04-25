@@ -31,3 +31,4 @@ class Hyena(Animal):
         super().__init__("hyena", name, animal_id, birth_date, color, sex, weight, originating_zoo, date_arrival)
 
     def make_sound(self):
+        return self.hyena_sound
