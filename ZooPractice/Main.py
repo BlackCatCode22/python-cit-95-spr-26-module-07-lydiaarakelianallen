@@ -54,10 +54,10 @@ def process_one_line(one_line):
         origin_01 = ""
         origin_02 = ""
 
-        print(one_line)
+        # print(one_line)
 
         group_of_words = one_line.strip().split(",")
-        print(group_of_words)
+        # print(group_of_words)
 
         single_words = group_of_words[0].strip().split(" ")
         age_in_years = single_words[0]
